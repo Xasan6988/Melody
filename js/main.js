@@ -6,6 +6,7 @@ const floorPath = $('.home-image path')
 floorPath.on('mouseover', function() {
   floorPath.removeClass('current-floor');
   currentFloor = $(this).attr('data-floor');
+  $(this).addClass('current-floor');
   $('.counter').text(currentFloor);
 });
 
